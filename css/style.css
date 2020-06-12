@@ -1,0 +1,287 @@
+/* *************************** *//* *************************** */
+/* ******* Basis Style *********//* ********Basis Style******** */
+/* *************************** *//* *************************** */
+*{
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+fieldset{
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+input{
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  padding: 0;
+  margin: 0;
+}
+/* *************************** *//* *************************** */
+           /* *********** Sticky Foooter************ */
+/* *************************** *//* *************************** */
+body{
+  display: flex;
+  flex-direction:column;
+  min-height: 100vh;
+}
+
+.main-content{
+  flex-grow: 1;
+}
+/* *************************** *//* *************************** */
+/* ******* Combine Style *********//* ****Combine Style******** */
+/* *************************** *//* *************************** */
+.main-header,
+.info-form{
+    text-align: center;
+}
+
+.info-form,
+.main-content{
+  width: 92%;
+  margin: auto;
+}
+
+.contack-title,
+.letter-title{
+   padding-top: 1rem;
+}
+
+/* *************************** *//* *************************** */
+/* ******* Header Style *********88* ******Header Style******** */
+/* *************************** *//* *************************** */
+.main-header {
+  background: rgb(247,105,8);
+  color: white;
+  padding: 1rem;
+}
+
+
+/* *************************** *//* *************************** */
+/* ******* Info Style *********88* ******Info Style************ */
+/* *************************** *//* *************************** */
+.info-form{
+  border-bottom: solid black 3px;
+}
+
+.info-form h3{
+  margin: 1rem;
+}
+
+/* *************************** *//* *************************** */
+/* ******* Main-content Style ****** Main-content Style******** */
+/* *************************** *//* *************************** */
+/* Contack Information */
+.main-content{
+  border-top: solid black 1.4px;
+  margin-top: 3px;
+}
+
+.contack input:not(.zipcode),
+#comments,
+#user_state{
+  background: rgba(193,192,201,.5);
+  width:100%;
+  border-radius: 5px;
+  border: none;
+  padding: 0.8rem;
+  display: block;
+}
+
+#user_state{
+  height: 3rem;
+}
+
+.contack label{
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+#zipcode{
+  background: rgba(193,192,201,.5);
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  padding: 0.8rem;
+  display: block;
+}
+
+/* Newsletter Style */
+.contack{
+  padding-bottom: 1.5rem;
+  border-bottom: solid black 2px;
+}
+
+.letter-wrap{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.checkbox-title{
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.radio-title{
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+input[name="user_interst"],
+input[name="format-type"]{
+  margin-bottom: 1.2rem;
+  margin-right: .8rem;
+}
+
+.comment_label{
+  margin: 1rem 0;
+  display: inline-block;
+}
+/****** button style *******/
+input[type="submit"]{
+  width: 100%;
+  padding: 1rem;
+  background: rgb(247,105,8);
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+input:not(#comments)::placeholder{
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+input:not(.btn),
+#comments{
+  transition:background 1s ease-out;
+  color: purple;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+input:not(.btn):focus,
+#comments:focus{
+  background:rgba(55,26,6,.3);
+  border-bottom: solid tomato 3px;
+}
+
+.newsletters{
+  background:rgba(247,105,8,.02);
+  padding:1rem;
+  margin-top: .8rem;
+}
+
+.letter-title{
+  padding: 1rem 0;
+}
+/* *************************** *//* *************************** */
+          /* *************** Footer Style******** */
+/* *************************** *//* *************************** */
+.main-footer{
+  text-align: center;
+  height: 10rem;
+}
+
+/* *************************** *//* *************************** */
+/* *********************fonts styles*************************** */
+/* *************************** *//* *************************** */
+.main-header h3{
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 2px 1px 4px black;
+}
+
+.contack-title,
+.letter-title{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: tomato;
+}
+
+label{
+  font-family: 'Raleway', sans-serif;
+}
+
+.info-form h3{
+  font-family: 'Bangers', cursive;
+  letter-spacing: 5px;
+}
+
+.info-form p{
+  color:gray;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-footer{
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label{
+  color: tomato;
+  font-weight: bold;
+}
+
+.btn{
+  font-family: 'Bangers', cursive;
+  color: white;
+  letter-spacing: 5px;
+  border: none;
+}
+
+.btn:hover{
+  background:rgba(247,105,8,.5);
+}
+/* ************************************** */
+/********** Media Query **********/
+/* ************************************** */
+@media(min-width: 768px){
+  .input-wrap{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: space-between;
+  }
+
+  .contack input:not(#zipcode),
+  .wrap-input{
+    width: 80%;
+    display: inline-block;
+  }
+
+  #zipcode{
+    width: 30%;
+  }
+
+  #user_state{
+    width: 80%;
+    display: inline;
+  }
+
+  .info-form,
+  .main-content{
+    max-width: 800px;
+  }
+}

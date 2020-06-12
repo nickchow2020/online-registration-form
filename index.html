@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Registration Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Fjalla+One|Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<h3>THE CODE REVIEW</h3>
+	</header>
+	<div class="info-form">
+		<h3>Signup for our newsletter</h3>
+		<p>
+			Get the latest news on how your code is doing right in your inbox
+		</p>
+	</div>
+	<main class="main-content">
+		<form action="index.html" method="post">
+			<fieldset class="contack">
+				<legend class="contack-title">Contack Information</legend>
+				<div class="input-wrap">
+					<label for="name">Full Name</label>
+					<input class="wrap-input" required type="text" id="name" name="user_name" placeholder="Full Name">
+				</div>
+
+				<div class="input-wrap">
+					<label for="email">Email Address</label>
+					<input class="wrap-input" required type="email" id="email" name="user_email" placeholder="Email Address">
+				</div>
+
+				<div class="input-wrap">
+					<label for="phone">Phone Number</label>
+					<input class="wrap-input" type="tel" id="phone" name="user_phone" placeholder="Phone Number">
+				</div>
+
+				<div class="input-wrap">
+					<label for="address">Street Address</label>
+					<input class="wrap-input" type="text" id="address" name="user_address" placeholder="Street Address">
+				</div>
+
+				<div class="input-wrap">
+					<label for="city">City</label>
+					<input class="wrap-input" type="text" id="city" name="user_city" placeholder="Living City">
+				</div>
+
+				<div class="input-wrap">
+					<label for="user_state">State</label><br>
+					<select name="user_state" id="user_state">
+							<option value="" disabled selected hidden>Please choose an State list above</option>
+							<option value="Alabama">Alabama-AL</option>
+							<option value="Alaska">Alaska-AK</option>
+							<option value="Arizona">Arizona-AZ</option>
+							<option value="Arkansas">Arkansas-AR</option>
+							<option value="California">California-CA</option>
+							<option value="Colorado">Colorado-CO</option>
+							<option value="Connecticut">Connecticut-CT</option>
+							<option value="Delaware">Delaware-DE</option>
+							<option value="Florida">Florida-FL</option>
+							<option value="Georgia">Georgia-GA</option>
+							<option value="Hawaii">Hawaii-HI</option>
+							<option value="Idaho">Idaho-ID</option>
+							<option value="Illinois">Illinois-IL</option>
+							<option value="Indiana">Indiana-IN</option>
+							<option value="Iowa">Iowa-IA</option>
+							<option value="Kansas">Kansas-KS</option>
+							<option value="Kentucky">Kentucky-KY</option>
+							<option value="Louisiana">Louisiana-LA</option>
+							<option value="Maine">Maine-ME</option>
+							<option value="Maryland">Maryland-MD</option>
+							<option value="Massachusetts">Massachusetts-MA</option>
+							<option value="Michigan">Michigan-MI</option>
+							<option value="Minnesota">Minnesota-MN</option>
+							<option value="Mississippi">Mississippi-MS</option>
+							<option value="Missouri">Missouri-MO</option>
+							<option value="Montana">Montana-MT</option>
+							<option value="Nebraska">Nebraska-NE</option>
+							<option value="Nevada">Nevada-NV</option>
+							<option value="New Hampshire">New Hampshire-NH</option>
+							<option value="New Jersey">New Jersey-NJ</option>
+							<option value="New Mexico">New Mexico-NM</option>
+							<option value="New York">New York-NY</option>
+							<option value="North Carolina">North Carolina-NC</option>
+							<option value="North Dakota">North Dakota-ND</option>
+							<option value="Ohio">Ohio-OH</option>
+							<option value="Oklahoma">Oklahoma-OK</option>
+							<option value="Oregon">Oregon-OR</option>
+							<option value="Pennsylvania">Pennsylvania-PA</option>
+							<option value="Rhode Island">Rhode Island-RI</option>
+							<option value="South Carolina">South Carolina-SC</option>
+							<option value="South Dakota">South Dakota-SD</option>
+							<option value="Tennessee">Tennessee-TN</option>
+							<option value="Texas">Texas-TX</option>
+							<option value="Utah">Utah-UT</option>
+							<option value="Vermont">Vermont-VT</option>
+							<option value="Virginia">Virginia-VA</option>
+							<option value="Washington">Washington-WA</option>
+							<option value="West Virginia">West Virginia-WV</option>
+							<option value="Wisconsin">Wisconsin-WI</option>
+							<option value="Wyoming">Wyoming-WY</option>
+					</select>
+				</div>
+
+				<div class="input-wrap">
+					<label for="zipcode">Zip Code</label>
+					<div class="wrap-input">
+						<input type="text" id="zipcode" name="user_zipcode" placeholder="Zip Code">
+					</div>
+				</div>
+			</fieldset>
+			<div class="newsletters">
+				<fieldset class="newsletter">
+					<legend class="letter-title">Newsletter</legend>
+					<div class="letter-wrap">
+						<label class="checkbox-title">Select the newsletters you would like to receive</label><br>
+						<input type="checkbox" id="html" name="user_interst"><label for="html">HTML News</label><br>
+						<input type="checkbox" id="css" name="user_interst"><label for="css">CSS News</label><br>
+						<input type="checkbox" id="javascript" name="user_interst"><label for="javascript">Javascript News</label><br>
+
+						<label class="radio-title">Newsletter format</label><br>
+						<input type="radio" id="format_html" name="format-type"><label for="format_html">HTML</label><br>
+						<input type="radio" id="format_text" name="format-type"><label for="format_text">Plain text</label><br>
+
+						<label for="comments" class="comment_label">Other topics you'd like to hear about</label><br>
+						<textarea name="user-comments" id="comments" rows="3" placeholder="Add Some Comemnts Here.."></textarea>
+					</div>
+				</fieldset>
+			</div>
+			<input type="submit" value="Sign Up" class="btn">
+		</form>
+	</main>
+	<footer class="main-footer">
+		<span>Copyright The Code Review</span>
+	</footer>
+</body>
+</html>
